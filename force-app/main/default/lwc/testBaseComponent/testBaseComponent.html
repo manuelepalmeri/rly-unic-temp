@@ -3,7 +3,11 @@
         <lightning-button variant="success" label="Close case" title="Close case"
         onclick={handleModal} class="slds-m-left_x-small"></lightning-button>     
     </lightning-card>
-    <c-confirmation-modal title={label.CCC_CaseRemindTitle} message={label.CCC_CaseRemindMessage}
-    checkbox={label.CCC_CaseRemindCheckbox} confirm={label.CCC_CaseRemindConfirm}
-    cancel={label.CCC_CaseRemindCancel} onclosed={confirmClosure}></c-confirmation-modal>
+    <c-confirmation-modal title={label.CCC_CaseRemindTitle}
+    message={label.CCC_CaseRemindMessage}
+    checkbox={label.CCC_CaseRemindCheckbox}
+    confirm={label.CCC_CaseRemindConfirm}
+    cancel={label.CCC_CaseRemindCancel}
+    oncaseclosureconfirmation={confirmClosure}
+    close-modal-confirmation-event-name={closeModalConfirmationEventName}></c-confirmation-modal>
 </template>

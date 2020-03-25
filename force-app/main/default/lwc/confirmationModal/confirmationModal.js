@@ -5,19 +5,23 @@ export default class ConfirmationModal extends LightningElement {
     @api checkbox;
     @api confirm;
     @api cancel;
-    modal;
+    @api closeModalConfirmationEventName;
+    modalVisibile;
     disabledConfirm;
     @api
     openModal(){
-        this.modal=true;
+        this.modalVisibile=true;
         this.disabledConfirm=true;
     }
     handleConfirm(event){  
         this.disabledConfirm=!(event.target.checked);
     }
+    handleClosureModal(){
+        this.closeModal();
+        if (!this.disabledConfirm) this.dispatchEvent(new CustomEvent(this.closeModalConfirmationEventName));
+    }
     @api
     closeModal(){
-        this.modal=false;
-        if (!this.disabledConfirm) this.dispatchEvent(new CustomEvent('closed'));
-    }
+        this.modalVisibile=false;
+    } 
 }
