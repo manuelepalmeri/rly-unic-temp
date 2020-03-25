@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CCC_CaseRemindCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remind operator to send an email after a case closure (Cancel button).</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CCC_CaseRemindCheckbox</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remind operator to send an email after a case closure (Checkbox).</shortDescription>
+        <value>Ok, I&#39;ll send a mail.</value>
+    </labels>
+    <labels>
+        <fullName>CCC_CaseRemindConfirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remind operator to send an email after a case closure (Confirm button).</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>CCC_CaseRemindMessage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remind operator to send an email after a case closure (Message).</shortDescription>
+        <value>Remember to send a mail to the client, after you close this case.</value>
+    </labels>
+    <labels>
+        <fullName>CCC_CaseRemindTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remind operator to send an email after a case closure (Title).</shortDescription>
+        <value>Remember to inform the client</value>
+    </labels>
+</CustomLabels>
